@@ -92,6 +92,62 @@
   </tbody>
 </table>
 
+        <!-- Project: Gaussian Process Classification using Acc. RP Cholesky for Histopathological Classification -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <!-- Replace with your project image -->
+                  <img src="gpc.png" width="160" height="140" alt="VICReg project thumbnail">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle"> Gaussian Process Classification using Acc. RP Cholesky for Histopathological Classification</span>
+                <br><br>
+
+                <ul style="margin:0; padding-left:18px;">
+                  <li>
+                    Developed a <b>fully Bayesian Gaussian Process Classification model</b> for cancer diagnosis using
+                    <b>accelerated Randomly Pivoted Cholesky (RPCholesky)</b> and <b>Hamiltonian Monte Carlo (HMC)</b>
+                    to enable scalable uncertainty-aware classification.
+                  </li>
+                  <li>
+                    Applied the method to large-scale histopathology datasets including <b>PCam</b> and
+                    <b>CAMELYON17-WILDS</b>, using <b>Phikon-based 512-dimensional embeddings</b> extracted from
+                    pathology image patches.
+                  </li>
+                  <li>
+                    Reduced the computational cost of Gaussian Process inference by approximating the dense
+                    <b>N × N kernel matrix</b> with a low-rank factorization, making Bayesian GP classification tractable
+                    for datasets with nearly <b>300K training examples</b>.
+                  </li>
+                  <li>
+                    Implemented <b>non-centered HMC posterior sampling</b> and a <b>pivots-as-inducing-points</b>
+                    predictive scheme to improve scalability while preserving calibrated Bayesian uncertainty estimates.
+                  </li>
+                  <li>
+                    Compared the proposed <b>Low-rank HMC GP</b> against <b>SVGP</b> and neural network baselines such as
+                    <b>U-Net</b>, evaluating performance using accuracy, AUROC, ECE, NLL, and Brier score.
+                  </li>
+                  <li>
+                    Achieved substantially better calibration under distribution shift on <b>CAMELYON17-WILDS</b>,
+                    reducing <b>ECE by 87.3%</b>, <b>NLL by 44.5%</b>, and <b>Brier score by 76.8%</b> compared to the SVGP baseline.
+                  </li>
+                </ul>
+
+                <p style="margin-top:10px;">
+                  <!-- Replace # with your actual links -->
+                  <a href="./DL-SSL-Project-report.pdf" target="_blank" rel="noopener noreferrer">Project Report</a>
+                  &nbsp;/&nbsp;
+                  <a href="https://drive.google.com/file/d/1MYeWUdCXbHdeSAWSl82drUu3ZRVrRBdj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Demo Video</a>
+                  &nbsp;/&nbsp;
+                  <a href="https://github.com/sd6701-droid/vicreg/tree/new-ds" target="_blank" rel="noopener noreferrer">Code</a>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
         <!-- Project: Self-Supervised Learning Using VICReg -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
