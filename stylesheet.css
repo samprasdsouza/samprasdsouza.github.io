@@ -102,6 +102,32 @@ h2 {
   font-weight: 700;
 }
 
+.news-item {
+  margin: 12px 0 0 0;
+  padding: 10px 14px;
+  font-size: 15px;
+  line-height: 1.6;
+  background: #f6f9fd;
+  border-left: 3px solid #1772d0;
+  border-radius: 4px;
+}
+
+.news-date {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #1772d0;
+  border-radius: 10px;
+}
+
+.news-venue {
+  font-weight: 700;
+  color: #c0392b;
+}
+
 .name {
   padding-top: 20px;
   margin: 0;
